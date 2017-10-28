@@ -1,0 +1,15 @@
+
+#setmeup
+mount /dev/sr1 /mnt
+
+/etc/yum.repos.d/local.repo
+contenct--
+[Newrepo]
+baseurl=file:///mnt
+gpgcheck=0
+
+echo $OSTYPE
+nmcli device status
+firwall-cmd --list-all
+
+export PS1="\e[1;32m[\u@\h \W]\$ \e[m "
